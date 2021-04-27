@@ -1,27 +1,48 @@
-# Vue 3 + Typescript + Vite
+# Vite2.x + Vue3.x + TypeScript
 
-This template should help get you started developing with Vue 3 and Typescript in Vite.
+[![Author](https://img.shields.io/badge/author-chenls-orange.svg)](https://gitee.com/chenls)
+[![License](https://img.shields.io/badge/license-MIT-8bb903.svg)](https://gitee.com/chenls/vite-vue3-project/blob/master/LICENSE)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-Airbnb-hotpink.svg)](https://github.com/airbnb/javascript#translation)
 
-## Recommended IDE Setup
+## 技术栈
 
-[VSCode](https://code.visualstudio.com/) + [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur). Make sure to enable `vetur.experimental.templateInterpolationService` in settings!
+- 编程语言：[TypeScript 4.x](https://www.typescriptlang.org/zh/) + [JavaScript](https://www.javascript.com/)
+- 构建工具：[Vite 2.x](https://cn.vitejs.dev/)
+- 前端框架：[Vue 3.x](https://v3.cn.vuejs.org/)
+- 路由工具：[Vue Router 4.x](https://next.router.vuejs.org/zh/index.html)
+- 状态管理：[Vuex 4.x](https://next.vuex.vuejs.org/)
+- UI 框架：[Element Plus](https://element-plus.org/#/zh-CN)
+- CSS 预编译：[Sass](https://sass.bootcss.com/documentation)
+- HTTP 工具：[Axios](https://axios-http.com/)
+- Git Hook 工具：[husky](https://typicode.github.io/husky/#/) + [lint-staged](https://github.com/okonet/lint-staged)
+- 代码规范：[EditorConfig](https://editorconfig.org) + [Prettier](https://prettier.io/) + [ESLint](https://eslint.org/) + [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript#translation)
 
-### If Using `<script setup>`
+## 快速开始
 
-[`<script setup>`](https://github.com/vuejs/rfcs/pull/227) is a feature that is currently in RFC stage. To get proper IDE support for the syntax, use [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) instead of Vetur (and disable Vetur).
+### 安装依赖
 
-## Type Support For `.vue` Imports in TS
+```sh
+npm install
+# or
+yarn
+```
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can use the following:
+### 启动项目
 
-### If Using Volar
+```sh
+npm run dev
+# or
+yarn run dev
+```
 
-Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
+### 项目打包
 
-### If Using Vetur
+```sh
+npm run build
+# or
+yarn run build
+```
 
-1. Install and add `@vuedx/typescript-plugin-vue` to the [plugins section](https://www.typescriptlang.org/tsconfig#plugins) in `tsconfig.json`
-2. Delete `src/shims-vue.d.ts` as it is no longer needed to provide module info to Typescript
-3. Open `src/main.ts` in VSCode
-4. Open the VSCode command palette
-5. Search and run "Select TypeScript version" -> "Use workspace version"
+## 许可
+
+MIT Copyright © 2021 chenls
