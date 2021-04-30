@@ -23,6 +23,7 @@ module.exports = {
         'chore:    对构建过程或辅助工具的更改\n            以及文档生成等库',
     },
     { value: 'revert', name: 'revert:   回滚提交' },
+    { value: 'ci', name: 'ci:       添加、修改 CI 配置、脚本' },
     { value: 'WIP', name: 'WIP:      进行中的工作' },
   ],
 
