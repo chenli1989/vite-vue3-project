@@ -1,1 +1,0 @@
-import{_ as t}from"./button.b94606d1.js";import{d as o,o as n,c as s,r as e,w as r,h as a}from"./vendor.1bee7ec1.js";import"./util.a60848fb.js";const u=o({components:{ElButton:t}}),l=a("Home");u.render=function(t,o,a,u,m,c){const d=e("ElButton");return n(),s(d,null,{default:r((()=>[l])),_:1})};export default u;
