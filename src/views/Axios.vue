@@ -7,6 +7,7 @@ import { defineComponent } from 'vue';
 import axios from '../utils/axios';
 
 export default defineComponent({
+  name: 'AxiosPage',
   setup() {
     axios
       .post('/login', { username: 'admin' })

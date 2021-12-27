@@ -4,13 +4,8 @@ interface LoginBody {
   username: string;
 }
 
-interface LoginResponse {
-  username: string;
-  firstName: string;
-}
-
 const handlers = [
-  rest.post<LoginBody, LoginResponse>(/\/login/, (req, res, ctx) => {
+  rest.post<LoginBody>(/\/login/, (req, res, ctx) => {
     const { username } = req.body;
     localStorage.setItem('is-authenticated', 'true');
 
@@ -23,4 +18,5 @@ const handlers = [
     );
   }),
 ];
-export { handlers, handlers as default };
+export default handlers;
+export { handlers };

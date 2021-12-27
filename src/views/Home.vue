@@ -7,6 +7,7 @@ import { defineComponent } from 'vue';
 import { ElButton } from 'element-plus';
 
 export default defineComponent({
+  name: 'HomePage',
   components: {
     ElButton,
   },
