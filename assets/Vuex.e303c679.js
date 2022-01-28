@@ -1,0 +1,1 @@
+/* empty css               */import{_ as t}from"./index.56e7d1c9.js";import{d as o,E as n,c as s,w as a,o as r,j as c}from"./vendor.275af63e.js";const _=o({name:"VuexPage"}),d=c("Vuex");function p(u,f,i,m,x,l){const e=n;return r(),s(e,null,{default:a(()=>[d]),_:1})}var $=t(_,[["render",p]]);export{$ as default};
