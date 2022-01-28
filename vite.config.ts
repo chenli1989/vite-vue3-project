@@ -23,10 +23,10 @@ export default defineConfig({
     }),
   ],
   resolve: {
-    alias: {
+    alias: [
       // 设置 `@` 指向 `src` 目录
-      '@': resolve(__dirname, 'src'),
-    },
+      { find: '@', replacement: resolve(__dirname, 'src') },
+    ],
   },
   css: {
     preprocessorOptions: {
@@ -44,7 +44,7 @@ export default defineConfig({
     // 设置代理
     proxy: {
       '/api': {
-        target: 'https://oa-api.517rxt.com',
+        target: 'http://api.xxx.com',
         changeOrigin: true,
         secure: false,
         rewrite: (path) => path.replace('/api/', '/'),

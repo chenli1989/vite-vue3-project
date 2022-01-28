@@ -1,7 +1,7 @@
 import { setupWorker } from 'msw';
 import { handlers } from './handlers';
 
-const worker = process.env.NODE_ENV === 'development' ? setupWorker(...handlers) : null;
+const worker = import.meta.env.DEV ? setupWorker(...handlers) : null;
 
 export default worker;
 

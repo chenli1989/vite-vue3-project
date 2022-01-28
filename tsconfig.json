@@ -11,6 +11,7 @@
     "experimentalDecorators": true,
     "lib": ["esnext", "dom"],
     "types": ["element-plus/global", "vite/client", "jest"],
+    "baseUrl": ".",
     "paths": {
       "@/*": [
         "./src/*"
